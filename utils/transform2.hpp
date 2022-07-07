@@ -11,8 +11,8 @@ namespace Transform
 
         public:
             Transform2();
-            Transform2(const Matrix::Matrix3& m);
-            Transform2(const Transform2& t);
+            Transform2(const Matrix::Matrix3& _m);
+            //Transform2(const Transform2& t);
 
             Transform2 apply_matrix(Transform2 t);
     };

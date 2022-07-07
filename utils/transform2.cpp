@@ -42,4 +42,20 @@ namespace Transform
 
         return Transform2(Matrix3(result));
     };
+
+    
+
+    Transform2::Transform2()
+    {
+        double matrix[3][3] = {{0, 0, 0},
+                               {0, 0, 0},
+                               {0, 0, 1}};
+
+        m = Matrix3(matrix);
+    }
+
+    Transform2::Transform2(const Matrix::Matrix3& _m)
+    {
+        m = Matrix3(_m);
+    }
 }
