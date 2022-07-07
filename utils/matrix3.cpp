@@ -69,7 +69,9 @@ namespace Matrix
 
 
 
-    Matrix3::Matrix3() : m{{0, 0, 0}, {0, 0, 0}, {0, 0, 0}} {};
+
+
+    Matrix3::Matrix3() : v{{0, 0, 0}, {0, 0, 0}, {0, 0, 0}} {};
 
     Matrix3::Matrix3(double values[3][3])
     {
@@ -77,7 +79,7 @@ namespace Matrix
         {
             for(int j = 0; j < 3; j++)
             {
-                m[i][j] = values[i][j];
+                v[i][j] = values[i][j];
             }
         }
     }
@@ -88,19 +90,19 @@ namespace Matrix
         {
             for(int j = 0; j < 3; j++)
             {
-                m[i][j] = matrix.get(i, j);
+                v[i][j] = matrix.get(i, j);
             }
         }
     }
 
-    double Matrix3::get(int _m, int _n) const 
+    double Matrix3::get(int m, int n) const 
     {
-        return m[_m][_n];
+        return v[m][n];
     }
 
-    void Matrix3::set(int _m, int _n, double _value)
+    void Matrix3::set(int m, int n, double _value)
     {
-        m[_m][_n] = _value;
+        v[m][n] = _value;
     }
 
     Matrix3 Matrix3::operator+(const Matrix3& other)
