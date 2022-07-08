@@ -29,6 +29,7 @@ double Thing::get_y_scale()
 }
 
 
+Thing::Thing(double x, double y, double _rot) : x_pos(x), y_pos(y), rot(_rot) { }
 
 void Thing::translate(double dx, double dy)
 {

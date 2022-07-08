@@ -4,7 +4,7 @@
 
 class Thing
 {
-    private:
+    protected:
         double x_pos;
         double y_pos;
 
@@ -16,7 +16,7 @@ class Thing
         Transform::Transform2 transform;
 
     public:
-        Thing(double x, double y, double rot);
+        Thing(double x, double y, double _rot);
 
         double get_x_pos();
         double get_y_pos();
@@ -35,5 +35,5 @@ class Thing
 
         void apply_matrix(Transform::Transform2 t);
 
-        virtual void draw();
+        virtual void draw() = 0;
 };
