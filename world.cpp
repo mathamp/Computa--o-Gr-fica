@@ -1,6 +1,6 @@
 #include "thing.hpp"
 #include "utils/opengl.hpp"
-#include "line.hpp"
+#include "things/line.hpp"
 
 #include <vector>
 #include <memory>
@@ -12,7 +12,9 @@ namespace World
 
     void initWorld()
     {
-        THINGS.emplace_back(new Line(0, 0, 20, 720));
+        THINGS.emplace_back(new Line(0, 0, 50, 720));
+        THINGS.emplace_back(new Line(0, 0, 1280, 720));
+        THINGS.emplace_back(new Line(250, 250, 1000, 250));
     }
 
     void draw_things()

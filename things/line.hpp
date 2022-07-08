@@ -1,5 +1,5 @@
 #pragma once
-#include "thing.hpp"
+#include "../thing.hpp"
 
 class Line : public Thing
 {
