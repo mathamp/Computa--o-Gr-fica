@@ -1,8 +1,10 @@
 #pragma once
 
+#include "utils/transform2.hpp"
+
 class Thing
 {
-    private:
+    protected:
         double x_pos;
         double y_pos;
 
@@ -11,10 +13,10 @@ class Thing
         double x_scale;
         double y_scale;
 
-        double matrix[3][3];
+        Transform::Transform2 transform;
 
     public:
-        Thing(double _x, double _y, double _rot);
+        Thing(double x, double y, double _rot);
 
         double get_x_pos();
         double get_y_pos();
@@ -24,16 +26,14 @@ class Thing
         double get_x_scale();
         double get_y_scale();
 
-        void translate(double _dx, double _dy);
-        void translate_matrix(double _translation_matrix[3][3]);
+        void translate(double dx, double dy);
 
-        void rotate(double _amount);
-        void rotate_matrix(double _rotation_matrix[3][3]);
+        void rotate_radians(double amount);
+        void rotate_degrees(double amount);
 
-        void scale(double _dx, double _dy);
-        void scale_matrix(double _scale_matrix[3][3]);
+        void scale(double sx, double sy);
 
-        void apply_matrix(double _transformation_matrix[3][3]);
+        void apply_matrix(Transform::Transform2 t);
 
-        virtual void draw();
+        virtual void draw() = 0;
 };
