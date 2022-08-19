@@ -1,4 +1,6 @@
 main:
+	mkdir -p build
+	mkdir -p bin
 	g++ thing.cpp -c -o build/thing.o
 	g++ world.cpp -c -o build/world.o
 	g++ utils/matrix3.cpp -c -o build/matrix3.o
