@@ -1,6 +1,7 @@
 #include "thing.hpp"
 #include "utils/opengl.hpp"
 #include "things/line.hpp"
+#include "things/circle.hpp"
 #include "utils/trig.hpp"
 
 #include <vector>
@@ -27,6 +28,12 @@ namespace World
 
             THINGS.emplace_back(new Line(x1, y1, x2, y2));
         }
+
+        THINGS.emplace_back(new Circle(50, 50, 50));
+        THINGS.emplace_back(new Circle(250, 250, 200));
+        THINGS.emplace_back(new Circle(150, 150, 300));
+        THINGS.emplace_back(new Circle(500, 500, 500));
+        THINGS.emplace_back(new Circle(750, 150, 20));
     }
 
     void draw_things()
