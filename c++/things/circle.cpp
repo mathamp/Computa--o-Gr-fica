@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-Circle::Circle(double x, double y, double radius) : radius(radius), Thing(x, y, 0) { }
+Circle::Circle(double x, double y, double radius) : radius(radius), Thing2(x, y, 0) { }
 
 void Circle::draw_circle_8points(double x, double y)
 {

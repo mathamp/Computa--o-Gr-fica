@@ -1,7 +1,7 @@
 #pragma once
-#include "../thing.hpp"
+#include "../thing2.hpp"
 
-class Circle : public Thing
+class Circle : public Thing2
 {
     private:
         double radius;

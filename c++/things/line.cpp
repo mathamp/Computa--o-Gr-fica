@@ -3,7 +3,7 @@
 #include "../utils/trig.hpp"
 #include <cmath>
 
-Line::Line(double _x1, double _y1, double _x2, double _y2) : x1(_x1) , y1(_y1), x2(_x2), y2(_y2), Thing(0.0, 0.0, 0.0) { };
+Line::Line(double _x1, double _y1, double _x2, double _y2) : x1(_x1) , y1(_y1), x2(_x2), y2(_y2), Thing2(0.0, 0.0, 0.0) { };
 
 void draw_first_octant(int x1, int y1, int x2, int y2)
 {

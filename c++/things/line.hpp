@@ -1,7 +1,7 @@
 #pragma once
-#include "../thing.hpp"
+#include "../thing2.hpp"
 
-class Line : public Thing
+class Line : public Thing2
 {
     private:
         double x1, x2;

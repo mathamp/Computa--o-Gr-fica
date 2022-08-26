@@ -2,7 +2,7 @@
 
 #include "utils/transform2.hpp"
 
-class Thing
+class Thing2
 {
     protected:
         double x_pos;
@@ -16,7 +16,7 @@ class Thing
         Transform::Transform2 transform;
 
     public:
-        Thing(double x, double y, double _rot);
+        Thing2(double x, double y, double _rot);
 
         double get_x_pos();
         double get_y_pos();

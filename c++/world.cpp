@@ -1,4 +1,4 @@
-#include "thing.hpp"
+#include "thing2.hpp"
 #include "utils/opengl.hpp"
 #include "things/line.hpp"
 #include "things/circle.hpp"
@@ -12,7 +12,7 @@
 
 namespace World
 {
-    std::vector<std::unique_ptr<Thing>> THINGS;
+    std::vector<std::unique_ptr<Thing2>> THINGS;
 
     double radius = 200;
 
